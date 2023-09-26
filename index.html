@@ -1,0 +1,29 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <h3 class="title">HOME</h3>
+                <h3 id="home-score" class="digital score">0</h3>
+                <div class="digital container gap">
+                    <p id="home-1" class="numbers" onclick="home1(); winner()">+1</p>
+                    <p id="home-2" class="numbers" onclick="home2(); winner()">+2</p>
+                    <p id="home-3" class="numbers" onclick="home3(); winner()">+3</p>
+                </div>
+            </div>
+            <div>
+                <h3 class="title">GUEST</h3>
+                <h3 id="guest-score" class="digital score">0</h3>
+                <div class="digital container gap">
+                    <p id="guest-1" class="numbers" onclick="guest1(); winner()">+1</p>
+                    <p id="guest-2" class="numbers" onclick="guest2(); winner()">+2</p>
+                    <p id="guest-3" class="numbers" onclick="guest3(); winner()">+3</p>
+                </div>
+            </div>
+        </div>
+            <h3 id="reset" onclick="reset(); winner()">Reset</h3>
+        <script src="index.js"></script>
+    </body>
+</html>
